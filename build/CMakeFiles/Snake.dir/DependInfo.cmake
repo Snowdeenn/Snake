@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/COURS LYCEE/cours_c/Raylib/Snake/src/jeu.c" "CMakeFiles/Snake.dir/src/jeu.c.obj" "gcc" "CMakeFiles/Snake.dir/src/jeu.c.obj.d"
   "C:/COURS LYCEE/cours_c/Raylib/Snake/src/main.c" "CMakeFiles/Snake.dir/src/main.c.obj" "gcc" "CMakeFiles/Snake.dir/src/main.c.obj.d"
   "C:/COURS LYCEE/cours_c/Raylib/Snake/src/pomme.c" "CMakeFiles/Snake.dir/src/pomme.c.obj" "gcc" "CMakeFiles/Snake.dir/src/pomme.c.obj.d"
   "C:/COURS LYCEE/cours_c/Raylib/Snake/src/snake.c" "CMakeFiles/Snake.dir/src/snake.c.obj" "gcc" "CMakeFiles/Snake.dir/src/snake.c.obj.d"

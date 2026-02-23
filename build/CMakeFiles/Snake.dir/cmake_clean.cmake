@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "C:/COURS LYCEE/cours_c/Raylib/Snake/bin/Snake.exe"
   "C:/COURS LYCEE/cours_c/Raylib/Snake/bin/Snake.exe.manifest"
   "C:/COURS LYCEE/cours_c/Raylib/Snake/bin/Snake.pdb"
+  "CMakeFiles/Snake.dir/src/jeu.c.obj"
+  "CMakeFiles/Snake.dir/src/jeu.c.obj.d"
   "CMakeFiles/Snake.dir/src/main.c.obj"
   "CMakeFiles/Snake.dir/src/main.c.obj.d"
   "CMakeFiles/Snake.dir/src/pomme.c.obj"

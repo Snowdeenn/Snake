@@ -128,6 +128,30 @@ Snake/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake.dir\build.make CMakeFiles/Snake.dir/build
 .PHONY : Snake/fast
 
+src/jeu.obj: src/jeu.c.obj
+.PHONY : src/jeu.obj
+
+# target to build an object file
+src/jeu.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake.dir\build.make CMakeFiles/Snake.dir/src/jeu.c.obj
+.PHONY : src/jeu.c.obj
+
+src/jeu.i: src/jeu.c.i
+.PHONY : src/jeu.i
+
+# target to preprocess a source file
+src/jeu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake.dir\build.make CMakeFiles/Snake.dir/src/jeu.c.i
+.PHONY : src/jeu.c.i
+
+src/jeu.s: src/jeu.c.s
+.PHONY : src/jeu.s
+
+# target to generate assembly for a file
+src/jeu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake.dir\build.make CMakeFiles/Snake.dir/src/jeu.c.s
+.PHONY : src/jeu.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -209,6 +233,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Snake
+	@echo ... src/jeu.obj
+	@echo ... src/jeu.i
+	@echo ... src/jeu.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
