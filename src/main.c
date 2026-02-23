@@ -41,17 +41,17 @@ int main(void) {
 
     while(!WindowShouldClose()) {
 
-        float dt = GetFrameTime();
-        timer += dt;
+    float dt = GetFrameTime();
+    timer += dt;
 
     // Stocke la direction courante
     int dx = 1, dy = 0;  // démarre vers la droite
 
     // Dans la boucle — change juste la direction
-    if(IsKeyDown(DROITE) && dx != -1) { dx = 1;  dy = 0; }
-    if(IsKeyDown(GAUCHE) && dx != 1)  { dx = -1; dy = 0; }
-    if(IsKeyDown(BAS)    && dy != -1) { dx = 0;  dy = 1; }
-    if(IsKeyDown(HAUT)   && dy != 1)  { dx = 0;  dy = -1; }
+    if(IsKeyDown(DROITE) && dx != 1) { dx = 1;  dy = 0; }
+    if(IsKeyDown(GAUCHE) && dx != -1)  { dx = -1; dy = 0; }
+    if(IsKeyDown(BAS)    && dy != 1) { dx = 0;  dy = 1; }
+    if(IsKeyDown(HAUT)   && dy != -1)  { dx = 0;  dy = -1; }
 
     if(!gameOver) {
         // Mouvement automatique selon le timer
