@@ -31,6 +31,7 @@ int main(void) {
 
 
     int tailleSnake = 1;
+    int nombrePomme = 0;
 
     Pomme pomme = creerPomme();
 
@@ -69,6 +70,7 @@ int main(void) {
 
             pomme = creerPomme();
             teteSnake = ajouteCaseSnake(teteSnake, &tailleSnake);
+            nombrePomme++;
 
         }
 
@@ -92,11 +94,7 @@ int main(void) {
             DrawRectangleRec(pomme.casePomme, PINK);
         }
 
-        for(int i = 0; i < tailleSnake; i++) {
-            DrawText(TextFormat("seg%d : %.0f - %.0f", i, (teteSnake + i)->corp.x, (teteSnake + i)->corp.y), 10, 20 * i + 200, 20, WHITE);
-        }
-        DrawText(TextFormat("collision : %d", collisionSerpentMurs(teteSnake)), 10, 150, 20, RED);
-        DrawText(TextFormat("%d - %d", (int)pomme.casePomme.x, (int)pomme.casePomme.y), 100, 100, 30, WHITE);
+        DrawText(TextFormat("Pomme : %d", nombrePomme), 50, 50, 30, WHITE);
     EndDrawing();
     }
 
