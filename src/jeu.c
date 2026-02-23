@@ -10,7 +10,7 @@ int collisionSerpentMurs(CaseSnake *tete) {
     int gameOver = 0;
 
 // Verifie si le serpent sort de la grill
-     if(tete->corp.x < SIZE_MIN_FENETRE || tete->corp.y < SIZE_MIN_FENETRE || tete->corp.x >= LARGEUR_FENETRE || tete->corp.y >= LONGUEUR_FENETRE) {
+     if(tete->corp.x < SIZE_MIN_FENETRE || tete->corp.y < SIZE_MIN_FENETRE || tete->corp.x >= LONGUEUR_FENETRE || tete->corp.y >= LARGEUR_FENETRE) {
         gameOver = 1;
      }
 
@@ -21,7 +21,7 @@ int collisionSerpentLuiMeme(CaseSnake *tete, int taille) {
 
     int gameOver = 0;
 
-//  On regarde si la tete mord le corp
+//  On regarde si la tete mord le corp on commence a 3 pour éviter qu'on detecte une collision trop tôt
     for(int i = 1; i < taille; i++) {
         if(CheckCollisionRecs((*tete).corp, ((tete) + i)->corp)) {
             gameOver = 1;
