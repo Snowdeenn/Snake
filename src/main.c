@@ -83,7 +83,7 @@ int main(void) {
             
             const char * texteGO = TextFormat("Gamer Over !!");
 
-            DrawText(texteGO, GetScreenWidth() / 2 - MeasureText(texteGO, 40) / 2, 480, 40, WHITE);
+            DrawText(texteGO, GetScreenWidth() / 2 - MeasureText(texteGO, 40) / 2, 300, 40, WHITE);
 
         } else {
 

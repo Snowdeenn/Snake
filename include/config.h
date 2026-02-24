@@ -4,8 +4,8 @@
 
 #define TAILLE_CASE 20
 #define SIZE_MIN_FENETRE 0
-#define LARGEUR_FENETRE 1040
-#define LONGUEUR_FENETRE 1880
+#define LARGEUR_FENETRE 600
+#define LONGUEUR_FENETRE 900
 
 #include <raylib.h>
 typedef enum {
