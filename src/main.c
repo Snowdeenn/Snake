@@ -9,6 +9,7 @@
 int main(void) {
 
     InitWindow(LONGUEUR_FENETRE, LARGEUR_FENETRE, "Snake.exe");
+    SetTargetFPS(60);
     srand(time(NULL));
     
 
