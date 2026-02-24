@@ -36,23 +36,23 @@ int main(void) {
     Pomme pomme = creerPomme();
 
     float timer = 0;
-    float vitesse = 0.1f;  // 1 mouvement toutes les 0.1 secondes
+    float vitesse = 0.15f;  // 1 mouvement toutes les 0.1 secondes
 
     int gameOver = 0;
+
+    // Stocke la direction courante
+    int dx = 1, dy = 0;  // démarre vers la droite
 
     while(!WindowShouldClose()) {
 
     float dt = GetFrameTime();
     timer += dt;
 
-    // Stocke la direction courante
-    int dx = 1, dy = 0;  // démarre vers la droite
-
     // Dans la boucle — change juste la direction
-    if(IsKeyDown(DROITE) && dx != 1) { dx = 1;  dy = 0; }
-    if(IsKeyDown(GAUCHE) && dx != -1)  { dx = -1; dy = 0; }
-    if(IsKeyDown(BAS)    && dy != 1) { dx = 0;  dy = 1; }
-    if(IsKeyDown(HAUT)   && dy != -1)  { dx = 0;  dy = -1; }
+    if(IsKeyPressed(DROITE) && dx != 1) { dx = 1;  dy = 0; }
+    if(IsKeyPressed(GAUCHE) && dx != -1)  { dx = -1; dy = 0; }
+    if(IsKeyPressed(BAS)    && dy != 1) { dx = 0;  dy = 1; }
+    if(IsKeyPressed(HAUT)   && dy != -1)  { dx = 0;  dy = -1; }
 
     if(!gameOver) {
         // Mouvement automatique selon le timer

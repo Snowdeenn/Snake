@@ -26,8 +26,6 @@ CaseSnake *ajouteCaseSnake(CaseSnake *tete, int *tailleSnake) {
     (tete + derniereCase)->corp.x = (tete + derniereCase - 1)->corp.x;
     (tete + derniereCase)->corp.y = (tete + derniereCase - 1)->corp.y;
 
-    printf("%d", (*tailleSnake));
-
     return tete;
 }
 
