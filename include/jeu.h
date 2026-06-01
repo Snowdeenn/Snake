@@ -2,7 +2,7 @@
 
     #define JEU_H
 
-    #include "../include/jeu.h"
+
     #include "../include/config.h"
     #include "../include/snake.h"
     #include "../include/pomme.h"

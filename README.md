@@ -28,8 +28,7 @@ Un Snake classique en C avec la bibliothèque **Raylib**, avec gestion de la mé
 ## Structure des fichiers
 
 ```
-Snake/
-├── main.c              # Boucle principale, initialisation, rendu
+Snake/             
 ├── include/
 │   ├── config.h        # Constantes globales et enum des touches
 │   ├── snake.h         # Structure CaseSnake, déclarations mouvement
@@ -39,6 +38,7 @@ Snake/
     ├── snake.c         # Mouvement et agrandissement du serpent
     ├── pomme.c         # Génération aléatoire d'une pomme
     └── jeu.c           # Logique des collisions
+    └── main.c          # Boucle principale, initialisation, rendu
 ```
 
 ---
