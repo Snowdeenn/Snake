@@ -1,3 +1,0 @@
-C:/COURS LYCEE/cours_c/Raylib/Snake/build/CMakeFiles/Snake.dir
-C:/COURS LYCEE/cours_c/Raylib/Snake/build/CMakeFiles/edit_cache.dir
-C:/COURS LYCEE/cours_c/Raylib/Snake/build/CMakeFiles/rebuild_cache.dir
