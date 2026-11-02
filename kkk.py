@@ -1,0 +1,2 @@
+bonjou = "bonjour"
+print(bonjou)
